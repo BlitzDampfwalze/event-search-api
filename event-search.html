@@ -10,16 +10,15 @@
 </head>
 <body>
 	<header>
-		<h1>App Name</h1>
-		<h1>Find Local Events Near You!</h1>
+		<h1>Icon/logo? App Name</h1>
+		<h1>Find Local Events Near You!</h1> <!-- format to smaller text -->
 	</header>
 	<main>
-		<form action="#">
-  		Location: <input type="text" name="location" value="Address, City, State, and/or Zipcode">
-  		<input type="submit" value="Submit">
-		</form>
-		<form action="#">
-	  		<select name="categories" size="4" multiple>
+		<form action="#" class="js-search-form">
+  		Location: <input type="text" name="location" class="js-query"> <!-- value="Address, City, State, and/or Zipcode" -->
+  		<button type="submit">Search</button>
+
+<!-- 	  		<select name="categories" size="4" multiple>
 		    <option value="music">Music</option>
 		    <option value="visual-arts">Visual Arts</option>
 		    <option value="performing-arts">Performing Arts</option>
@@ -34,9 +33,14 @@
 		    <option value="kids-family">Kids & Family</option>
 		    <option value="other">Other</option>
 			</select>
-			<input type="submit">
-		</form>		
+			<input type="submit"> -->
+			<div>Sort by: (drop down of options)</div>
+		</form>
+
+		<div class="js-search-results">
+			
+		</div>		
 	</main>
-	<script src="index.js"></script>
+	<script src="event-search.js"></script>
 </body>
 </html>
