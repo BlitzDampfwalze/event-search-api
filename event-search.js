@@ -4,8 +4,7 @@ const YELP_SEARCH_URL = 'https://api.yelp.com/v3/events';
 function getDataFromApi(searchLocation, callback) {
   const settings = {
     url: YELP_SEARCH_URL,
-    headers: {'Authorization': 'Bearer Xq4osKS_egqqR2Fjmvy9Pt5hBg8X7gYk5y6O4BOlPqTbFU5_LS6SJjNbBX7qZIxD_Sv2_33BNytg3kgNRjPKOp64eCiNk_kNCkC8IoGz5KOyZdaY2NWyUTbc2-QqW3Yx'},
-    // Authorization: 'Bearer Xq4osKS_egqqR2Fjmvy9Pt5hBg8X7gYk5y6O4BOlPqTbFU5_LS6SJjNbBX7qZIxD_Sv2_33BNytg3kgNRjPKOp64eCiNk_kNCkC8IoGz5KOyZdaY2NWyUTbc2-QqW3Yx',
+    headers: {'Authorization': 'Bearer token'},
     data: {
       
       location: `${searchLocation}`,
